@@ -72,7 +72,8 @@ public class Main {
                 System.out.println("El número " + numeros[i] + " no está en la tabla");
             }
         }
-
+        //el objeto sc se resetea
+        sc.reset();
         //ejercicio 3
         //crear un arreglo bidimensional de 10 elementos ya que las colisiones se resuelven con encadenamiento
         int[][] tabla = new int[11][11];
@@ -97,6 +98,8 @@ public class Main {
                 i--;
             }
         }
+        //cerramos el scanner
+        sc.close();
         //imprimir la tabla
         for (int i = 0; i < 10; i++) {
             System.out.println("Posición " + i + ": " + tabla[i][0] + " " + tabla[i][1] + " " + tabla[i][2] + " " + tabla[i][3] + " " + tabla[i][4] + " " + tabla[i][5] + " " + tabla[i][6] + " " + tabla[i][7] + " " + tabla[i][8] + " " + tabla[i][9] + " " + tabla[i][10]);
